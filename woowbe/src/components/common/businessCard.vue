@@ -4,7 +4,7 @@
       <img class="logo" :src="logoUrl" alt="Logo">
     </div>
     <div class="card-content">
-      <h2>{{ title }}</h2>
+      <h2 @click="goToStore">{{ title }}</h2>
       <p class="paragraph">{{ truncateDescription }} </p>
     </div>
   </div>
@@ -88,7 +88,7 @@ export default {
   overflow: hidden;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
   padding: 1rem;
-  margin: 0.5rem 0;
+  margin: 0.5rem;
 }
 
 .card-image {
@@ -130,6 +130,7 @@ export default {
 h2 {
   margin: 0;
   font-size: 16px;
+  cursor: pointer;
 }
 
 p {

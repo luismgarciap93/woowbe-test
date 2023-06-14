@@ -9,7 +9,8 @@ export default createStore({
     businessList: [],
     offersList: [],
     business: null,
-    offers: []
+    offers: [],
+    userInfo: null
   },
   getters,
   mutations,

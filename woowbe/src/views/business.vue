@@ -7,7 +7,7 @@
         <option v-for="filter in filterList" :key="filter">{{ filter }}</option>
       </select>
     </div>
-    <div class="row justify-content-around" v-if="businessList">
+    <div class="row justify-content-around card-container" v-if="businessList">
       <card-component v-for="item in filteredStores" :key="item.id" :image-url="item.cover"
         :logo-url="item.square_picture" :title="item.name" :description="item.description" :favorite="item.is_favorite"
         :id="item.id" />
@@ -70,5 +70,10 @@ export default {
 .combobox-selected {
   margin-top: 8px;
   font-size: 16px;
+}
+
+.card-container {
+  width: fit-content;
+  margin: auto;
 }
 </style>

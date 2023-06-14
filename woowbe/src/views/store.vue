@@ -9,7 +9,7 @@
       </div>
     </header>
     <section>
-      <p>{{ selectedBussines.description }}</p>
+      <p class="w-75 mx-auto">{{ selectedBussines.description }}</p>
       <h4>Promociones</h4>
       <div class="promotions-container" v-if="selectedOffer.length > 0">
         <promotions title="Promotion" :daysOfWeek="promotion.weekdays" :status="promotion.status"
@@ -61,7 +61,7 @@ export default {
 .header-content {
   content: "";
   position: absolute;
-  top: 10vh;
+  top: 15vh;
   left: 0;
   width: 100%;
   height: fit-content;

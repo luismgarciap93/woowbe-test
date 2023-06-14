@@ -16,8 +16,8 @@ import { library } from '@fortawesome/fontawesome-svg-core'
 import { FontAwesomeIcon } from '@fortawesome/vue-fontawesome'
 
 /* import specific icons */
-import { faHeart, faHeartCrack } from '@fortawesome/free-solid-svg-icons'
+import { faHeart, faHeartCrack, faBell } from '@fortawesome/free-solid-svg-icons'
 
-library.add(faHeart, faHeartCrack)
+library.add(faHeart, faHeartCrack, faBell)
 
 createApp(App).use(store).use(VueAxios, axios).use(router).component('font-awesome-icon', FontAwesomeIcon).component('EasyDataTable', Vue3EasyDataTable).mount('#app')

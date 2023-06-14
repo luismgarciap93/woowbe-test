@@ -27,6 +27,21 @@ export default {
       console.log(e)
     }
   },
+  async getUserInfo (context, token) {
+    try {
+      const response = await axios.get('https://backend.dev.woowbe.com/api/v1/users/me/',
+        {
+          headers: {
+            Authorization: `Bearer ${token}`
+          }
+        })
+      const userInfo = response.data
+      context.commit('setUserInfo', userInfo)
+      return userInfo
+    } catch (e) {
+      console.log(e)
+    }
+  },
   async getOffersList (context, token) {
     try {
       const response = await axios.get('https://backend.dev.woowbe.com/api/v1/offers/public/',

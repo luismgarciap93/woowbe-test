@@ -8,6 +8,9 @@ export default {
   setOffersList (state, payload) {
     state.offersList = payload
   },
+  setUserInfo (state, payload) {
+    state.userInfo = payload
+  },
   setBusiness (state, payload) {
     state.business = payload
   },

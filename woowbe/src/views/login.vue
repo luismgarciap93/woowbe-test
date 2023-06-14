@@ -24,7 +24,7 @@ export default {
     }
   },
   methods: {
-    ...mapActions(['getToken', 'getBusinessList', 'getOffersList']),
+    ...mapActions(['getToken', 'getBusinessList', 'getOffersList', 'getUserInfo']),
     async login () {
       const payload = {
         email: this.email,
@@ -33,6 +33,7 @@ export default {
       const token = await this.getToken(payload)
       await this.getBusinessList(token)
       await this.getOffersList(token)
+      await this.getUserInfo(token)
       this.$router.push('business')
     }
   },
