@@ -19,7 +19,7 @@ import bellNotification from '@/components/common/bell.vue'
 import { mapState } from 'vuex'
 
 export default {
-  name: 'Header',
+  name: 'Cabecera',
   components: {
     bellNotification
   },
