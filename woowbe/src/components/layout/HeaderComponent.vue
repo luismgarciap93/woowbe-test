@@ -4,7 +4,7 @@
       <div>
         <img src="@/assets/img/woowbe-logo.png" class="logo" alt="logo" @click="goToLogin">
       </div>
-      <div v-if="userInfo" class="user-info">Logged as: <span class="badge rounded-pill bg-info .text-light">{{
+      <div v-if="userInfo" class="user-info">Usuario Logeado: <span class="badge rounded-pill bg-info .text-light">{{
         userInfo.email }}</span>
       </div>
       <bellNotification v-if="userInfo" class="bell" :notifications="userInfo.unread_notifications_count">
